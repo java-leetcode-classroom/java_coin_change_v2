@@ -29,4 +29,17 @@ class SolutionTest {
   void changeV2Example3() {
     assertEquals(1, sol.changeV2(10,new int[]{10}));
   }
+
+  @Test
+  void changeDFSExample1() {
+    assertEquals(4, sol.changeDFS(5,new int[]{1,2,5}));
+  }
+  @Test
+  void changeDFSExample2() {
+    assertEquals(0, sol.changeDFS(3,new int[]{2}));
+  }
+  @Test
+  void changeDFSExample4() {
+    assertEquals(1, sol.changeDFS(10,new int[]{10}));
+  }
 }
